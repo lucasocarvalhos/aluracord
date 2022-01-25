@@ -13,20 +13,20 @@ function GlobalStyle() {
         }
 
         body {
-            font-family: 'Roboto', 'Open Sans'
+            font-family: 'Open Sans', sans-serif
         }
 
-        html, body, #_next {
+        html, body, #__next {
             min-height: 100vh;
             display: flex;
             flex: 1
         }
 
-        #_next{
-            flex:1
+        #__next{
+            flex: 1
         }
 
-        #_next > * {
+        #__next > * {
             flex: 1
         }
         
@@ -77,7 +77,7 @@ export default function PaginaInicial() {
             <Box
                 styleSheet={{
                     display: 'flex', alignItems: 'center', justifyContent: 'center',
-                    backgroundColor: appConfig.theme.colors.primary["400"],
+                    backgroundColor: appConfig.theme.colors.primary["500"],
                     backgroundImage: 'url(https://c4.wallpaperflare.com/wallpaper/185/1022/422/code-computer-programming-syntax-wallpaper-preview.jpg)',
                     backgroundRepeat: 'no-repeat', backgroundSize: 'cover', backgroundBlendMode: 'multiply',
                 }}
@@ -94,7 +94,7 @@ export default function PaginaInicial() {
                         width: '100%', maxWidth: '700px',
                         borderRadius: '5px', padding: '32px', margin: '16px',
                         boxShadow: '0 2px 10px 0 rgb(0 0 0 / 20%)',
-                        backgroundColor: appConfig.theme.colors.primary["400"],
+                        backgroundColor: appConfig.theme.colors.primary["500"],
                     }}
                 >
                     {/* Formulário */}
@@ -114,10 +114,10 @@ export default function PaginaInicial() {
                             fullWidth
                             textFieldColors={{
                                 neutral: {
-                                    textColor: appConfig.theme.colors.primary["400"],
+                                    textColor: appConfig.theme.colors.primary["500"],
                                     mainColor: appConfig.theme.colors.primary["300"],
                                     mainColorHighlight: appConfig.theme.colors.primary["200"],
-                                    backgroundColor: appConfig.theme.colors.primary["200"],
+                                    backgroundColor: appConfig.theme.colors.primary["050"],
                                 },
                             }}
                         />
@@ -126,10 +126,10 @@ export default function PaginaInicial() {
                             label='Entrar'
                             fullWidth
                             buttonColors={{
-                                contrastColor: appConfig.theme.colors.primary["300"],
-                                mainColor: appConfig.theme.colors.primary["100"],
+                                contrastColor: appConfig.theme.colors.primary["050"],
+                                mainColor: appConfig.theme.colors.primary["400"],
                                 mainColorLight: appConfig.theme.colors.primary["050"],
-                                mainColorStrong: appConfig.theme.colors.primary["200"],
+                                mainColorStrong: appConfig.theme.colors.primary["300"],
                             }}
                         />
                     </Box>
