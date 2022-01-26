@@ -2,15 +2,6 @@ import appConfig from '../config.json';
 import { Box, Button, Text, TextField, Image } from '@skynexui/components';
 import React from 'react';
 import { useRouter } from 'next/router';
-// import axios from 'axios'
-
-// function getData(username) {
-//     axios.get(`https://api.github.com/users/${username}`).then(response => {
-//         const bio = response.data.bio
-//         const location = response.data.location
-//         console.log(bio, location)
-//     })
-// }
 
 function Title(props) {
     const Tag = props.tag || 'h1';
